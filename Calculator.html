@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" type="text/css" href="calculator-day.css">
+    <script type="text/javascript" src="Calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="main">
+        <div id="tool-bar">
+            <div id="mode-container">
+                <button class="close" onclick="closeWindow()"></button>
+                <button class="minimize" onclick="minimizeWindow()"></button>
+                <button class="fullWindow" onclick="maximizeWindow()"></button>
+            </div>
+            <div id="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" onclick="dayNight()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div id="value-container">
+            <div><p id="calculate"></p></div>
+            <div><p id="result">0</p></div>
+        </div>
+        <div id="keyboard-container">
+                <div id="keyboard-erase"><button class="symbolButton" onclick="erase()">C</button></div>
+                <div id="keyboard-plusminum"><button class="symbolButton" onclick="plusminum()">±</button></div>
+                <div id="keyboard-percent"><button class="symbolButton" onclick="percent()">%</button></div>
+                <div id="keyboard-division"><button class="symbolButton" onclick="division()">÷</button></div>
+                <div id="keyboard-seven"><button class="numberButton" onclick="seven()">7</button></div>
+                <div id="keyboard-eight"><button class="numberButton" onclick="eight()">8</button></div>
+                <div id="keyboard-nine"><button class="numberButton" onclick="nine()">9</button></div>
+                <div id="keyboard-multiply"><button class="symbolButton" onclick="multiply()">×</button></div>
+                <div id="keyboard-four"><button class="numberButton" onclick="four()">4</button></div>
+                <div id="keyboard-five"><button class="numberButton" onclick="five()">5</button></div>
+                <div id="keyboard-six"><button class="numberButton" onclick="six()">6</button></div>
+                <div id="keyboard-rest"><button class="symbolButton" onclick="rest()">-</button></div>
+                <div id="keyboard-one"><button class="numberButton" onclick="one()">1</button></div>
+                <div id="keyboard-two"><button class="numberButton" onclick="two()">2</button></div>
+                <div id="keyboard-three"><button class="numberButton" onclick="three()">3</button></div>
+                <div id="keyboard-plus"><button class="symbolButton" onclick="plus()">+</button></div>
+                <div id="keyboard-zero"><button class="numberButton" onclick="zero()">0</button></div>
+                <div id="keyboard-dot"><button class="numberButton" onclick="dot()">.</button></div>
+                <div id="keyboard-space"></div>
+                <div id="keyboard-equal"><button class="equal" onclick="equal()">=</button></div>
+        </div>
+    </div>
+</body>
+</html>

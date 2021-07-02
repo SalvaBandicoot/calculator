@@ -1,0 +1,234 @@
+
+	body {
+        font-family: Helvetica, sans-serif;
+        font-size: 22px;
+        margin: 0px;
+        padding: 15px;
+        background-color: #18D4A3;
+        justify-content: center;
+        }
+        .close {
+        background-color: #FD544D;
+        border: none;
+        padding: 6px;
+        border-radius: 100%;
+        margin-right: 2px;
+        }
+        .minimize {
+        background-color: #FFC02F;
+        border: none;
+        padding: 6px;
+        border-radius: 100%;
+        margin-right: 2px;
+        margin-left: 2px;
+        }
+        .fullWindow {
+        background-color: #28CA40;
+        border: none;
+        padding: 6px;
+        border-radius: 100%;
+        margin-left: 2px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+            vertical-align: middle;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #dbe2e1;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            top: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #18D4A3;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #18D4A3;
+        }
+        input:checked + .slider:before {
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        #main {
+            background-color: #F4FDFB;
+            border-radius: 15px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        #tool-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+        }
+        #mode-container {
+            padding-left: 15px;
+            margin: 0px;
+            vertical-align: top;
+        }
+        #toggle-container {
+            padding: 15px;
+        }
+        #calculate {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            padding-right: 25px;
+            height: 18px;
+            margin: 25px 0 5px 0;
+        }
+        #result {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-size: 40px;
+            padding-right: 25px;
+            margin: 0 0 25px 0;
+        }
+        #keyboard-container {
+            display: grid;
+            width: 100%;
+            grid-template-areas: 'auto auto auto auto';
+            column-gap: 8px;
+            row-gap: 8px;
+            margin: auto;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 0 0 15px 15px;
+        }
+        #keyboard-c {
+            grid-column: 1 / 2;
+        }
+        #keyboard-plusminum {
+            grid-column: 2 / 3;
+        }
+        #keyboard-percent {
+            grid-column: 3 / 4;
+        }
+        #keyboard-division {
+            grid-column: 4 / 5;
+        }
+        #keyboard-seven {
+            grid-column: 1 / 2;
+        }
+        #keyboard-eight {
+            grid-column: 2 / 3;
+        }
+        #keyboard-nine {
+            grid-column: 3 / 4;
+        }
+        #keyboard-multiply {
+            grid-column: 4 / 5;
+        }
+        #keyboard-four {
+            grid-column: 1 / 2;
+        }
+        #keyboard-five {
+            grid-column: 2 / 3;
+        }
+        #keyboard-six {
+            grid-column: 3 / 4;
+        }
+        #keyboard-resty {
+            grid-column: 4 / 5;
+        }
+        #keyboard-one {
+            grid-column: 1 / 2;
+        }
+        #keyboard-two {
+            grid-column: 2 / 3;
+        }
+        #keyboard-three {
+            grid-column: 3 / 4;
+        }
+        #keyboard-plus {
+            grid-column: 4 / 5;
+        }
+        #keyboard-zero {
+            grid-column: 1 / 2;
+        }
+        #keyboard-dot {
+            grid-column: 2 / 3;
+        }
+        #keyboard-space {
+            grid-column: 3 / 4;
+        }
+        #keyboard-equal {
+            grid-column: 4 / 5;
+        }
+        .symbolButton {
+            background-color: #dbe2e1;
+            font-size: 22px;
+            border: none;
+            color: #373E47;
+            width: 40px;
+            height: 40px;
+            margin: 11px;
+            border-radius: 50%;
+            transition: .4s;
+        }
+        .symbolButton:hover {
+            background-color: #FFFFFF;
+            color: #18D4A3;
+        }
+        .numberButton {
+            background-color: #FFFFFF;
+            font-size: 22px;
+            border: none;
+            color: #373E47;
+            width: 40px;
+            height: 40px;
+            margin: 11px 13px;
+            border-radius: 50px;
+            transition: .4s;
+        }
+        .numberButton:hover {
+            background-color: #F4FDFB;
+            color: #18D4A3;
+        }
+        .equal {
+            background-color: #18D4A3;
+            font-size: 22px;
+            color: #FFFFFF;
+            width: 40px;
+            height: 40px;
+            margin: 11px;
+            border-radius: 100px;
+            border: 1px solid #18D4A3;
+            transition: .4s;
+        }
+        .equal:hover {
+            background-color: #FFFFFF;
+            color: #18D4A3;
+            border: 1px solid #18D4A3;
+        }
