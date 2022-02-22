@@ -2,6 +2,11 @@
 # 🧮 JavaScript Calculator
 
 A simple JavaScript Calculator made as a school project to Assembler Institute of Technology.
+## 💻 Tech Stack
+
+HTML5, CSS3, JavaScript.
+
+  
 ## 👤 Authors
 
 - [@SalvaBandicoot](https://github.com/SalvaBandicoot)
@@ -39,9 +44,3 @@ their integration with HTML.
 | Night mode detail | ![#2e3951](https://via.placeholder.com/10/2e3951?text=+) #2E3951 |
 | Corporate color | ![#18D4A3](https://via.placeholder.com/10/18D4A3?text=+) #18D4A3 |
 
-
-## 💻 Tech Stack
-
-HTML5, CSS3, JavaScript.
-
-  
